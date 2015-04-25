@@ -1,0 +1,219 @@
+body {
+  background: #f8f8f8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+
+h1 {
+  color: #2b3c4e;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  margin: 0;
+  top: 30px;
+  left: 30px;
+  padding: 15px;
+  z-index: 200;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+}
+
+.hexagon {
+  opacity: 0.5;
+  width: 200px;
+  height: 115px;
+  position: absolute;
+}
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -57px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-right: 100px solid transparent;
+  border-bottom: 57px solid;
+  border-left: 100px solid transparent;
+}
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -57px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 57px solid;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+}
+
+.green {
+  top: 144px;
+  left: 100px;
+  background: #4eb96e;
+  -webkit-animation: green-animation 5s infinite ease-in-out;
+          animation: green-animation 5s infinite ease-in-out;
+  border-color: #4eb96e transparent;
+}
+.green:before, .green:after {
+  border-color: #4eb96e transparent;
+}
+
+.red {
+  top: 57px;
+  left: 50px;
+  background: #f05b5a;
+  -webkit-animation: red-animation 4s infinite ease-in-out;
+          animation: red-animation 4s infinite ease-in-out;
+}
+.red:before, .red:after {
+  border-color: #f05b5a transparent;
+}
+
+.blue {
+  top: 144px;
+  left: 200px;
+  background: #2b95bf;
+  -webkit-animation: blue-animation 5s infinite ease-in-out;
+          animation: blue-animation 5s infinite ease-in-out;
+}
+.blue:before, .blue:after {
+  border-color: #2b95bf transparent;
+}
+
+.purple {
+  top: 230px;
+  left: 50px;
+  background: #955ba4;
+  -webkit-animation: purple-animation 5s infinite step-start;
+          animation: purple-animation 5s infinite step-start;
+}
+.purple:before, .purple:after {
+  border-color: #955ba4 transparent;
+}
+
+.yellow {
+  top: 229px;
+  left: 150px;
+  background: #efc31a;
+  -webkit-animation: yellow-animation 5s infinite ease-in-out;
+          animation: yellow-animation 5s infinite ease-in-out;
+}
+.yellow:before, .yellow:after {
+  border-color: #efc31a transparent;
+}
+
+@-webkit-keyframes red-animation {
+  0% {
+    opacity: 0;
+    top: 144px;
+    left: 0;
+  }
+  55% {
+    opacity: 0.5;
+    top: 57px;
+    left: 50px;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes red-animation {
+  0% {
+    opacity: 0;
+    top: 144px;
+    left: 0;
+  }
+  55% {
+    opacity: 0.5;
+    top: 57px;
+    left: 50px;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes purple-animation {
+  0%, 80% {
+    top: 230px;
+    left: 50px;
+  }
+  20% {
+    top: 57px;
+    left: 150px;
+  }
+}
+@keyframes purple-animation {
+  0%, 80% {
+    top: 230px;
+    left: 50px;
+  }
+  20% {
+    top: 57px;
+    left: 150px;
+  }
+}
+@-webkit-keyframes blue-animation {
+  0%, 100% {
+    opacity: 0;
+  }
+  30%, 40% {
+    opacity: 0.5;
+  }
+}
+@keyframes blue-animation {
+  0%, 100% {
+    opacity: 0;
+  }
+  30%, 40% {
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes green-animation {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 0.5;
+  }
+}
+@keyframes green-animation {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes yellow-animation {
+  0%, 30%, 100% {
+    opacity: 0;
+  }
+  50%, 80% {
+    opacity: 0.5;
+  }
+}
+@keyframes yellow-animation {
+  0%, 30%, 100% {
+    opacity: 0;
+  }
+  50%, 80% {
+    opacity: 0.5;
+  }
+}

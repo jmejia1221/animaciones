@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+
+body{
+	text-align: center;	
+}
+h1{
+	font-family: 'Amatic SC', cursive;
+	font-weight: normal;
+	color: #8ac640;
+	font-size: 2.5em;
+}
+
+.sprite{
+	width: 257px;
+	height: 186px;
+	background: url('../images/sprite.jpg') left center;
+	margin: 0 auto;
+	margin-top: 50px;
+	animation: sprite 1s steps(8) infinite;
+	-webkit-animation: sprite 1s steps(8) infinite;
+}
+@keyframes sprite {
+	100% { background-position: -2056px; }
+}
+@-webkit-keyframes sprite {
+	100% {background-position: -2056px; }
+}

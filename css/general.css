@@ -1,0 +1,27 @@
+.back{
+	color: #fff;
+	border-radius: 20px;
+	padding: 10px 50px;
+	background-color: #3979B7;
+	text-decoration: none;
+	font-family: sans-serif;
+	margin: 40px 0;
+	display: block;
+	width: 150px;
+	text-align: center;
+}
+
+.list-principal li{
+	list-style: none;
+}
+
+.list-principal li a{
+	width: 250px;
+	color: #fff;
+	background-color: #3979B7;
+	padding: 10px 40px;
+	margin: 20px 0;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
