@@ -8,15 +8,15 @@
         "link": 1,
         "sub": [{
             "name": "Arsenal",
-            "link": 0-0,
+            "link": "0-0",
             "sub": null
         }, {
             "name": "Liverpool",
-            "link": 0-1,
+            "link": "0-1",
             "sub": null
         }, {
             "name": "Manchester United",
-            "link": 0-2,
+            "link": "0-2",
             "sub": null
         }]
     }, {
@@ -24,11 +24,11 @@
         "link": 2,
         "sub": [{
             "name": "Barcelona",
-            "link": 2-0,
+            "link": "2-0",
             "sub": null
         }, {
             "name": "Real Madrid",
-            "link": 2-1,
+            "link": "2-1",
             "sub": null
         }]
     }, {
@@ -36,11 +36,11 @@
         "link": 3,
         "sub": [{
             "name": "Bayern Munich",
-            "link": 3-1,
+            "link": "3-1",
             "sub": null
         }, {
             "name": "Borrusia Dortmund",
-            "link": 3-2,
+            "link": "3-2",
             "sub": null
         }]
     }]
